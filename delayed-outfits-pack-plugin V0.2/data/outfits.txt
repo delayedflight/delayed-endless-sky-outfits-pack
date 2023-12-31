@@ -1,0 +1,164 @@
+# Copyright (c) 2023 by delayedflight
+# Contact me on Github with any feedback https://github.com/delayedflight/delayed-endless-sky-outfits-pack
+
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+
+# Note: the above copyright statement is suggested in any plugins you create.
+# Of course, instead of my name you would fill in your own.
+
+
+
+# Stun Grenade Boarding Outfit
+sprite "outfit/flashbang.png"
+outfit "Stun Grenades"
+	plural "Stun Grenades"
+	category "Hand to Hand"
+	cost 17000
+	thumbnail "outfit/flashbang"
+	"capture attack" 1.2
+	"capture defense" 0.0
+	"unplunderable" 1
+	description "Skirting the barriers of legality and more widely available than their lethal cousins, stun grenades otherwise known as flashbangs are a less-lethal solution for taking over a ship. Used in the confines of a ship's metal hull the impact of these grenades make for a highly effective solution for entering rooms, however are completely useless for defense."
+
+# Shield Extender Outfits
+
+outfit "Corax Model II Mod B3 Shield Extender"
+	category "Systems"
+	cost 150000
+	thumbnail "outfit/small shield"
+	"mass" 15
+	"outfit space" -15
+	"shield multiplier" 0.10
+	"cooling inefficiency" 0.10
+	"heat generation" 1.5
+	"energy consumption" 1.5
+	description "Compact yet powerful, the Corax Model II is where it all started. Designed for use on fighters and small vessels it became a popular alternative for captains or pilots looking for an alternative to power hungry shield generators."
+	
+outfit "Corax Model III Mod A2 Shield Extender"
+	category "Systems"
+	cost 250000
+	thumbnail "outfit/medium shield"
+	"mass" 25
+	"outfit space" -25
+	"shield multiplier" 0.20
+	"cooling inefficiency" 0.2
+	"heat generation" 3.5
+	"energy consumption" 3.5
+	description "The mid-sized offering from Corax, the model III is a popular outfit among light freighter captains and smaller combat vessels. Featuring a good a healthy boost to a ship's shield buffer while not being too hard on existing systems (this newest revision is even slightly better in energy consumption)"
+	
+outfit "Corax Model IV Shield Extender"
+	category "Systems"
+	cost 500000
+	thumbnail "outfit/large shield"
+	"mass" 35
+	"outfit space" -35
+	"shield multiplier" 0.30
+	"heat generation" 11
+	"energy consumption" 11
+	description "The large model of the Corax family of shield extenders, the model IV offers a balance of extra shielding without the added bulk this model is popular with captains looking to add additional shield buffer to their ships for either longer combat staying power or unarmmed blockade runners making high speed runs through contested space."
+
+outfit "Corax Model V Shield Extender"
+	category "Systems"
+	cost 1000000
+	thumbnail "outfit/huge shield"
+	"mass" 50
+	"outfit space" -50
+	"shield multiplier" 0.40
+	"heat generation" 13
+	"energy consumption" 13
+	description "The largest of the Corax series of shield extenders; adding a substantial amount of shields to vessel without the added weight of a traditional generator (most of the mass being in additional emitters and gear) the trade-off being higher stresses put on all existing systems"
+	
+
+# Outfit space increasing outfits 
+
+# Armour to outfit transfer
+outfit "Armour to Outfit Transfer"
+	category "Systems"
+	cost 100000
+	thumbnail "outfit/outfit expansion"
+	"mass" -20
+	"outfit space" 15
+	"hull multiplier" -0.20
+
+	description "For those captains who either have a strong trust in their shields or wanting to live on the edge. The armour to outfit transfer strips the ship of some of its exterior plating to lighten the ship and provide more space for extra outfits."
+
+# External Systems Pods	
+outfit "External Systems Pods"
+	category "Systems"
+	cost 250000
+	thumbnail "outfit/fuel pod"
+	"mass" 15
+	"outfit space" 15
+	"turret mounts" -1
+	"threshold percentage" 0.05
+	
+	description "Designed to be fitted to turret mounts these external pods allow non essential components to be moved from the interior of the ship to these exterior spaces leaving more room for the space strapped captain to squeeze in that extra blaster. The downside is that one needs to give up a turret slot and possibly compromising the ship's damage control capabilities, then again dead ships don't shoot back..."
+	
+# Large Cargo Outfit Conversion	
+outfit "Large Cargo Conversion"
+	category "Systems"
+	cost 1000000
+	thumbnail "outfit/outfit expansion"
+	"mass" 60
+	"outfit space" 150
+	"cargo space" -200
+	"cooling inefficiency" 5
+	"heat dissipation" -.07
+	"unplunderable" 1
+	description "This expansion allows you to convert large cargo bays into space for extra equipment and or weapon systems. The bulk conversion adds more mass than normal outfit conversions due to the installation of some auxilliary cooling equipment making this conversion a bit more heat efficient. However due to the nature of the extensive work involved it is only available at larger shipyards."
+	
+# Turret Outfit
+outfit "Refurbished Ship Turret"
+	category "Turrets"
+	cost 100000
+	thumbnail "outfit/refurbished-ship-cannon"
+	"mass" 15
+	"outfit space" -15
+	"weapon capacity" -15
+	"turret mounts" -1
+	"required crew" 1
+	weapon
+		sprite "projectile/choleric"
+		"hardpoint sprite" "hardpoint/refurb-cannon-turret-highlights"
+		"hardpoint offset" 9.
+		sound "cannon-refurb"
+		"fire effect" "choleric fire"
+		"live effect" "choleric smoke" 24
+		"die effect" "small explosion"
+		"hit effect" "small explosion"
+		"inaccuracy" 2
+		"turret turn" 5
+		"velocity" 14.5
+		"lifetime" 130
+		"random lifetime" 10
+		"reload" 35
+		"firing energy" 50
+		"firing heat" 100
+		"shield damage" 120
+		"hull damage" 350
+		"blast radius" 50
+		"hit force" 200
+	description "Taken from ancient warhips and refurbished by enterprising junk dealers these turrets have been adapted for use in space; though old their rotation is fast even by today's standards, the rate of fire can allow them to rapidly punch holes in anything that is unshielded, and best of all they're cheap"
+
+#Outfitters list
+outfitter "Common Outfits"
+	"Stun Grenades"
+	"Corax Model II Mod B3 Shield Extender"
+	"Corax Model III Mod A2 Shield Extender"
+	"Armour to Outfit Transfer"
+	"Refurbished Ship Turret"
+	
+outfitter "Kraz Advanced"
+	"Corax Model V Shield Extender"
+	"Corax Model IV Shield Extender"
+	"External Systems Pods"
+	"Large Cargo Conversion"
+
+	
